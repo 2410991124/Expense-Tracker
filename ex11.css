@@ -1,0 +1,243 @@
+#first{
+    background-color: #38a3a5;
+    display: flex;
+    height: 710px;
+    width: 100%;
+}
+#second{
+    background-image: url("/expense10.jpg");
+    background-size: cover;
+    padding-top: 200px;
+    margin-top: 100px;
+    height: 400px;
+    width: 750px;
+}
+#pink{
+    padding-top: 280px;
+   background-color: #38a3a5;
+    background-size: cover;
+    height: 430px;
+    width: 760px;
+    font-size: 74px;
+    color: rgb(38, 17, 17);
+    text-align:center;
+
+}
+#quote{
+    padding-top: 200px;
+}
+#line{
+    font-size: 30px;
+    margin-inline: 10px;
+    line-height:0.2;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.6);
+    border-bottom: 1px #fff;
+}
+nav .Expense{
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 0%;
+    padding: 0;
+    display: flex;
+}
+nav ul li a{
+    line-height: 80px;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    background: rgba(0,0,0,0.7);
+    border-radius: 6px;
+}
+.container{
+    height: 100vh;
+    position: relative;
+}
+section{
+    width: 100%;
+    height: 100vh;
+}
+#hii{
+    text-decoration: none;
+    color:white;
+}
+.head{
+    text-align:center;
+    color:rgb(4, 47, 47);
+    font-size:60px;
+    padding-left:160px;
+    padding-right:160px;
+    margin-left:300px;
+    margin-right:300px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#cards{
+    display:flex;
+    align-items:left;
+    margin-top:100px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    justify-content:space-around;
+    margin-right:54px;
+    height:500px;
+}
+.card{
+    position:left;
+    width:250px;
+    height:300px;
+    perspective:1000px;
+}
+.card-inner{
+    position:absolute;
+    width:100%;
+    height:100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d; 
+}
+.card:hover .card-inner{
+    transform: rotateX(180deg);
+}
+.card-front, .card-back{
+    position:absolute;
+    width:120%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-COLOR:rgb(161, 219, 226);
+    border-radius:20px;
+}
+.card-back{
+    background-color:#9fc0de;
+    color:rgb(250, 240, 247);
+    transform:rotateX(180deg);
+    font-size:22px;
+    padding-left:10px;
+    padding-top:60px;
+}
+.card h2{
+    font-size: 40px;
+    margin:0;
+    padding: 20px;
+    text-align:center;
+    margin-top:60px;
+    font-family:inherit;
+
+}
+.card-front{
+    color: black;
+    padding-top:60px;
+    background-image:url(/expense19.jpg);
+    border-left:8px solid #fce3a5;
+    border-right:8px solid #b2e18e;
+    border-top:8px solid #dc9c9c;
+    border-bottom:8px solid #96b2d4;
+}
+body{
+    background-color:#063250;
+}
+.head2{
+    font-size:30px;
+    padding-left:434px;
+    color:white;
+    font-size:40px;
+    
+}
+p{
+    color:rgb(250, 248, 248);
+}
+footer {
+    text-align: center;
+    padding: 170px;
+    background-color: #4A6284; 
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 77%;
+}
+img{
+    height:82px;
+    width:82px;
+    float:left;
+    margin-left:0px;
+    padding-top:2.2px;
+    padding-left:0px;
+}
+footer {
+    
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    /* position: relative; */
+    width: auto;
+    height: 200px;
+    
+}
+
+/* Footer links styling */
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+
+
+
+ 

@@ -1,0 +1,141 @@
+body {
+
+    font-family: Arial, sans-serif;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+
+    margin: 0;
+    background:linear-gradient(rgb(232, 241, 232),rgb(165, 192, 202),rgb(96, 145, 141));
+
+    background-size: cover;
+} 
+
+
+
+.app-container {
+
+    background-color:#95b7bc;
+
+    padding: 20px;
+
+    width: 50%;
+
+    max-width: 500px; 
+
+    border-radius: 60px;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+    place-items:right;
+    display:grid;
+    
+    padding-right: 40px;
+
+    border: 8px solid black;
+}
+
+h2 {
+
+    color: rgb(13, 59, 133);
+    font-size: 50px;
+
+}
+
+p {
+
+    color: #570d23;
+
+}
+
+.form-container {
+
+    margin-top: 20px;
+
+}
+
+label {
+
+    display: block;
+
+    margin: 10px 0 5px;
+
+    color: #333;
+
+    font-weight: bold;
+
+}
+
+input, select, button {
+
+    width: 100%;
+
+    padding: 10px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #1e1caf;
+
+    border-radius: 4px;
+
+}
+
+button {
+
+    background-color: #e60b2f;
+
+    color: rgb(7, 33, 47);
+
+    border: none;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+button:hover {
+
+    background-color: #c10a29;
+
+}
+
+.sms-alert {
+
+    background-color: #f5f2f6;
+
+    border: 1px solid #ddd;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    margin-top: 20px;
+
+    text-align: left;
+
+    font-size: 0.9rem;
+
+    color: #333;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.hidden {
+
+    display: none;
+
+}
+
+.sms-alert p {
+
+    line-height: 1.5;
+
+}

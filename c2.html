@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title> Responsive Contact Us Form | CodingLab </title>
+  <link rel="stylesheet" href="c.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    function validateForm() {
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let message = document.getElementById("message").value;
+      let error = "";
+
+      if (name === "") {
+        error += "Please enter your name.\n";
+      }
+
+      if (email === "") {
+        error += "Please enter your email address.\n";
+      } else if (!validateEmail(email)) {
+        error += "Please enter a valid email address.\n";
+      }
+
+      if (message === "") {
+        error += "Please enter your message.";
+      }
+
+      if (error !== "") {
+        alert(error);
+        return false;
+      }
+
+      return true;
+    }
+
+    function validateEmail(email) {
+      const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(String(email).toLowerCase());
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Chitkara University</div>
+          <div class="text-two">Rajpura</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+0098 9893 5647</div>
+          <div class="text-two">+0096 3434 5678</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">abc@gmail.com</div>
+          <div class="text-two">xyz@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
+        <form action="#" onsubmit="return validateForm()">
+          <div class="input-box">
+            <input type="text" id="name" placeholder="Enter your name">
+          </div>
+          <div class="input-box">
+            <input type="text" id="email" placeholder="Enter your email">
+          </div>
+          <div class="input-box">
+            <input type="text" id="phone" placeholder="Enter your phone number:">
+          </div>
+          <div class="input-box">
+            <input type="text" id="message" placeholder="Query">
+          </div>
+          <div class="input-box message-box">
+          </div>
+          <div class="button">
+            <input type="submit" value="Send Now" >
+          </div>
+        </form>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
