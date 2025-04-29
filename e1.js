@@ -7,6 +7,7 @@ const yearlySummaryBtn = document.getElementById("yearlySummary");
 
 let expenses = [];
 
+
 expenseForm.addEventListener("submit", function (e) {
   e.preventDefault();
 
