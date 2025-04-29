@@ -1,5 +1,6 @@
 const accordions = document.querySelectorAll(".accordion");
 
+
 accordions.forEach((accordion, index) => {
   const header = accordion.querySelector(".accordion__header");
   const content = accordion.querySelector(".accordion__content");
