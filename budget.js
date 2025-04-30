@@ -11,6 +11,7 @@ document.getElementById("budget-form").addEventListener("submit", function(event
     document.getElementById("amount").value = "";
 });
 
+
 function createCategory(category, amount, period) {
     const categoriesList = document.getElementById("categories-list");
     const categoryItem = document.createElement("div");
