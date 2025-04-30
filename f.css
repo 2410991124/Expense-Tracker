@@ -20,6 +20,7 @@
 
 }
 
+
 html {
     font-size: 62.5%;
 }
@@ -42,7 +43,7 @@ body {
 }
 
 .container{ 
-    width: 56%;
+    width: 76%;
     min-height: 100vh;;
     padding: 2rem;
     display: grid;

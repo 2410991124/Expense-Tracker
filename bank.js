@@ -23,7 +23,7 @@ document.getElementById('transactionForm').addEventListener('submit', function(e
 
         ${transactionType}: ${amount}
 
-        Date: ${transactionDate}
+        Dates: ${transactionDate}
 
         Balance: ₦##,###,###
 
